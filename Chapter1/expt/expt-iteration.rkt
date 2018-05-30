@@ -1,4 +1,3 @@
-;; import the counter
 (define (expt b n)
   (expt-iter b n 1))
 
