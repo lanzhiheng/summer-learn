@@ -1,5 +1,5 @@
 ;; import the counter
-(require "../share/step-counter.rkt")
+(require "../../share/step-counter.rkt")
 
 (define (double x) (* 2 x))
 
