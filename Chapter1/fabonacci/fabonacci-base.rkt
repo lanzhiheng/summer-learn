@@ -1,9 +1,7 @@
 #lang racket
 
-(provide fib-slow fib-quick)
-
 ;; 递归计算
-(define (fib-slow n)
+(define (fib-recursion n)
   (cond [(= n 0) 0]
         [(= n 1) 1]
         [else (+ (fib-slow (- n 1))
@@ -11,7 +9,7 @@
 
 
 ;; 迭代计算
-(define (fib-quick n)
+(define (fib-iteration n)
   (define (fib-iter a b count)
     (if (= count 0)
         a
